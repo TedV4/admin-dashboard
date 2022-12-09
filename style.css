@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header {
+    grid-column: 2 / 4;
+    grid-row: 1;
+
+    display: flex;
+    flex-direction: column;
+    
+    background: pink;
+}
+
+.top-nav, .bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    background: cyan;
+}
+
+.logo {
+    height: auto;
+    margin-top: 2em;
+}
+
+.admin-btns, .settings-btns {
+    display: flex; 
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+}
+
