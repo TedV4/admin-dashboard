@@ -1,13 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-    height: 100%;
 }
 
 .container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    overflow: auto;
 }
 
 .header {
@@ -48,5 +49,37 @@
     flex-direction: column;
     height: auto;
     gap: 15px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0 20px 20px;
+}
+
+.project-card {
+    background: lime;
+    text-align: center;
+}
+
+.activity-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    background: palegoldenrod;
+}
+
+.announcements, .trending {
+    background: mediumslateblue;
 }
 
